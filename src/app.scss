@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Reddit+Mono:wght@200..900&display=swap");
+
+:root {
+  --m-font-sans: "Inter", sans-serif;
+
+  --m-fs-sans-xxxl: 7.2rem;
+  --m-fs-sans-xxl: 6.4rem;
+  --m-fs-sans-xl: 4.8rem;
+  --m-fs-sans-l: 3.6rem;
+  --m-fs-sans-m: 2.4rem;
+  --m-fs-sans-s: 1.8rem;
+  --m-fs-sans-xs: 1.6rem;
+  --m-fs-sans-xxs: 1.4rem;
+  --m-fs-sans-xxxs: 1.2rem;
+
+  --m-fw-sans-xxxb: 699;
+  --m-fw-sans-xxb: 608;
+  --m-fw-sans-xb: 529;
+  --m-fw-sans-b: 460;
+  --m-fw-sans-n: 400;
+  --m-fw-sans-l: 348;
+  --m-fw-sans-xl: 303;
+  --m-fw-sans-xxl: 263;
+
+  --m-color-black: black;
+  --m-color-blue: #457b9d;
+  --m-color-coral: #ff8377;
+  --m-color-gray: #f8f9fa;
+  --m-color-green: #83c5be;
+  --m-color-light-blue: #689bf7;
+  --m-color-purple: #8e7dbe;
+  --m-color-red: #e07a5f;
+  --m-color-white: #ffffff;
+  --m-color-yellow: #f2cc8f;
+
+  --m-max-z: 42;
+
+  --m-search-result-img-width: 7.83rem;
+
+  --m-aspect-ratio-n: 11 / 17;
+  --m-aspect-ratio-w: 24 / 36;
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    --m-anime-detail-padding: 1rem;
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+    --m-anime-detail-padding: 1.25rem;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    --m-anime-detail-padding: 1.5rem;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    --m-anime-detail-padding: 1.75rem;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    --m-anime-detail-padding: 2rem;
+  }
+  @media (min-width: 1281px) {
+    --m-anime-detail-padding: 2.25rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 223;
+}
+
+html {
+  font-size: 62.5%;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  font-family: var(--m-font-sans);
+  font-size: var(--m-fs-sans-m);
+  font-weight: var(--m-fw-sans-n);
+}
+
+a {
+  text-decoration: none;
+  color: var(--m-color-black);
+
+  &:hover {
+    text-decoration: underline;
+    color: var(--m-color-blue);
+  }
+}
+
+.button-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.6rem;
+  border: none;
+
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1),
+    inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5),
+    0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  &:focus {
+    box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2),
+      0px 0.5px 1px rgba(0, 0, 0, 0.1),
+      0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+    outline: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// @media (min-width: 320px) and (max-width: 480px) {
+// }
+// @media (min-width: 481px) and (max-width: 767px) {
+// }
+// @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+// }
+// @media (min-width: 768px) and (max-width: 1024px) {
+// }
+// @media (min-width: 1025px) and (max-width: 1280px) {
+// }
+// @media (min-width: 1281px) {
+// }

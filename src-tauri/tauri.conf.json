@@ -6,7 +6,7 @@
     "distDir": "../build"
   },
   "package": {
-    "productName": "anime-book",
+    "productName": "Miruta",
     "version": "0.0.0"
   },
   "tauri": {
@@ -15,13 +15,17 @@
       "shell": {
         "all": false,
         "open": true
+      },
+      "window": {
+        "setSize": true,
+        "setPosition": true
       }
     },
     "windows": [
       {
-        "title": "anime-book",
-        "width": 800,
-        "height": 600
+        "title": "Miruta",
+        "width": 1600,
+        "height": 1000
       }
     ],
     "security": {
