@@ -1,7 +1,18 @@
-# Tauri + SvelteKit + TypeScript
+# Miruta
 
-This template should help get you started developing with Tauri, SvelteKit and TypeScript in Vite.
+A tool to help you manage your watched and to-watch anime, built with Tauri.
 
-## Recommended IDE Setup
+## To-Do
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).
+- [ ] Clean up the codebase
+- [ ] Refactor
+- [ ] Sort the list by name, date_added, date_watched, or my_score
+- [ ] Support multiple lists
+- [ ] Cache image blobs in IndexedDB
+- [ ] Improve the UI
+- [ ] Consider using Melt UI
+- [ ] Implement a search function within lists; what would be the best way to do this?
+- [ ] Add more data fields: date_added, date_watched, episodes_completed (an array of numbers?)
+- [ ] Add a keyboard shortcut for search (cmd+k)
+- [ ] Add a dark theme
+- [ ] Add a list view
