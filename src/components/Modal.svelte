@@ -34,9 +34,9 @@
     border-radius: 10px;
     overflow: auto;
     z-index: calc(var(--m-max-z) + 1);
-    width: 90vw;
+    width: 96vw;
     max-width: 64rem;
-    height: calc(90vw * 36 / 24);
-    max-height: calc(64rem * 36 / 24);
+    height: calc(64rem * 36 / 24);
+    max-height: 88vh;
   }
 </style>

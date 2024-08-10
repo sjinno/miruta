@@ -1,5 +1,22 @@
+<script lang="ts">
+  import { open } from "@tauri-apps/api/shell";
+
+  async function openLink(url: string) {
+    try {
+      await open(url);
+      console.log("Link opened successfully");
+    } catch (error) {
+      console.error("Failed to open link:", error);
+    }
+  }
+</script>
+
 <footer>
-  Powered by&nbsp;<a href="https://jikan.moe/">Jikan API</a>
+  Powered by&nbsp;<span
+    class="open-link-span"
+    on:click={() => openLink("https://jikan.moe")}
+    aria-hidden="true">Jikan API</span
+  >
 </footer>
 
 <style lang="scss">
@@ -14,12 +31,11 @@
     justify-content: center;
     font-size: var(--m-fs-sans-s);
 
-    a {
-      text-decoration: none;
-      color: var(--m-color-black);
+    .open-link-span {
       font-weight: var(--m-fw-sans-xb);
 
       &:hover {
+        cursor: pointer;
         text-decoration: underline;
         color: var(--m-color-blue);
       }
