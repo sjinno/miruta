@@ -13,9 +13,14 @@
 
 <footer>
   Powered by&nbsp;<span
-    class="open-link-span"
+    class="attribute"
     on:click={() => openLink("https://jikan.moe")}
     aria-hidden="true">Jikan API</span
+  >. Icons by&nbsp;
+  <span
+    class="attribute"
+    on:click={() => openLink("https://icons8.com")}
+    aria-hidden="true">Icons8</span
   >
 </footer>
 
@@ -31,7 +36,7 @@
     justify-content: center;
     font-size: var(--m-fs-sans-s);
 
-    .open-link-span {
+    .attribute {
       font-weight: var(--m-fw-sans-xb);
 
       &:hover {
